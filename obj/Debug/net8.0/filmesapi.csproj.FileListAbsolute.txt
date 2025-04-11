@@ -30,3 +30,4 @@ C:\Aulas\filmesapi\obj\Debug\net8.0\refint\filmesapi.dll
 C:\Aulas\filmesapi\obj\Debug\net8.0\filmesapi.pdb
 C:\Aulas\filmesapi\obj\Debug\net8.0\filmesapi.genruntimeconfig.cache
 C:\Aulas\filmesapi\obj\Debug\net8.0\ref\filmesapi.dll
+C:\Aulas\filmesapi\obj\Debug\net8.0\filmesapi.sourcelink.json

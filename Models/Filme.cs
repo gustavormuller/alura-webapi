@@ -16,5 +16,6 @@ namespace alura_webapi.Models
         [Required]
         [Range(70, 600, ErrorMessage = "A duração deve estar entre 70 e 600 minutos")]
         public int Duracao { get; set; }
+        public int Id { get; set; }
     }
 }

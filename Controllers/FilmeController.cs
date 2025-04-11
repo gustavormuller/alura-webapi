@@ -12,18 +12,27 @@ namespace alura_webapi.Controllers
     public class FilmeController
     {
         private static List<Filme> filmes = [];
+        private static int id = 0;
 
         [HttpPost]
         public void AdicionaFilme([FromBody] Filme filme)
         {
-            if (!string.IsNullOrEmpty(filme.Titulo) &&
-                !string.IsNullOrEmpty(filme.Genero) &&
-                filme.Duracao >= 70)
-            {
-                filmes.Add(filme);
-                Console.WriteLine(filme.Titulo);
-                Console.WriteLine(filme.Duracao);
-            }
+            filme.Id = id++;
+            filmes.Add(filme);
+            Console.WriteLine(filme.Titulo);
+            Console.WriteLine(filme.Duracao);
+        }
+
+        [HttpGet]
+        public IEnumerable<Filme> RecuperaFilmes()
+        {
+            return filmes;
+        }
+
+        [HttpGet("{id}")]
+        public Filme RecuperaFilmePorId(int id)
+        {
+            return filmes.FirstOrDefault(filme => filme.Id == id);
         }
     }
 }
