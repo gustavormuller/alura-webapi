@@ -16,9 +16,14 @@ namespace alura_webapi.Controllers
         [HttpPost]
         public void AdicionaFilme([FromBody] Filme filme)
         {
-            filmes.Add(filme);
-            Console.WriteLine(filme.Titulo);
-            Console.WriteLine(filme.Duracao);
+            if (!string.IsNullOrEmpty(filme.Titulo) &&
+                !string.IsNullOrEmpty(filme.Genero) &&
+                filme.Duracao >= 70)
+            {
+                filmes.Add(filme);
+                Console.WriteLine(filme.Titulo);
+                Console.WriteLine(filme.Duracao);
+            }
         }
     }
 }
