@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using alura_webapi.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace alura_webapi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class FilmeController
+    public class FilmeController : ControllerBase
     {
         private static List<Filme> filmes = [];
         private static int id = 0;
 
         [HttpPost]
-        public void AdicionaFilme([FromBody] Filme filme)
+        public IActionResult AdicionaFilme([FromBody] Filme filme)
         {
             filme.Id = id++;
             filmes.Add(filme);
-            Console.WriteLine(filme.Titulo);
-            Console.WriteLine(filme.Duracao);
+            return CreatedAtAction(nameof(RecuperaFilmePorId), new { id = filme.Id }, filme);
         }
 
         [HttpGet]
@@ -30,9 +30,11 @@ namespace alura_webapi.Controllers
         }
 
         [HttpGet("{id}")]
-        public Filme RecuperaFilmePorId(int id)
+        public IActionResult RecuperaFilmePorId(int id)
         {
-            return filmes.FirstOrDefault(filme => filme.Id == id);
+            var filme = filmes.FirstOrDefault(filme => filme.Id == id);
+            if (filme == null) return NotFound();
+            return Ok(filme);
         }
     }
 }
