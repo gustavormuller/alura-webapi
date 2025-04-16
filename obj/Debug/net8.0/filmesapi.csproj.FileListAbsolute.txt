@@ -103,3 +103,5 @@ C:\Aulas\filmesapi\obj\Debug\net8.0\refint\filmesapi.dll
 C:\Aulas\filmesapi\obj\Debug\net8.0\filmesapi.pdb
 C:\Aulas\filmesapi\obj\Debug\net8.0\filmesapi.genruntimeconfig.cache
 C:\Aulas\filmesapi\obj\Debug\net8.0\ref\filmesapi.dll
+C:\Aulas\filmesapi\bin\Debug\net8.0\AutoMapper.dll
+C:\Aulas\filmesapi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
