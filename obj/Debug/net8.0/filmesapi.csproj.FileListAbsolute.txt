@@ -105,3 +105,7 @@ C:\Aulas\filmesapi\obj\Debug\net8.0\filmesapi.genruntimeconfig.cache
 C:\Aulas\filmesapi\obj\Debug\net8.0\ref\filmesapi.dll
 C:\Aulas\filmesapi\bin\Debug\net8.0\AutoMapper.dll
 C:\Aulas\filmesapi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Aulas\filmesapi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Aulas\filmesapi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Aulas\filmesapi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Aulas\filmesapi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
