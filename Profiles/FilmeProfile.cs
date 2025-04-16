@@ -13,6 +13,7 @@ namespace filmesapi.Profiles
         public FilmeProfile()
         {
             CreateMap<CreateFilmeDto, Filme>();
+            CreateMap<UpdateFilmeDto, Filme>();
         }
     }
 }
