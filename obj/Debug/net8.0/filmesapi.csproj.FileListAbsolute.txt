@@ -109,3 +109,5 @@ C:\Aulas\filmesapi\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Aulas\filmesapi\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Aulas\filmesapi\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Aulas\filmesapi\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Aulas\filmesapi\bin\Debug\net8.0\filmesapi.xml
+C:\Aulas\filmesapi\obj\Debug\net8.0\filmesapi.xml
